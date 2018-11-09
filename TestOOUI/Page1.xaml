@@ -7,6 +7,48 @@
             <Label Text="Welcome to Xamarin.Forms!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height=".25*" />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+            </Grid>
+
+            <Label Grid.ColumnSpan="2"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   Text="Select a Project" />
+            <ListView Grid.Row="1"
+                      Grid.ColumnSpan="2"
+                     
+                      x:Name="listViewProjects"
+                      SelectedItem="0">
+
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="Name" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <ListView Grid.Row="2"
+                      Grid.ColumnSpan="2"
+                      x:Name="listViewInfo" >
+
+            <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell>
+                            <TextCell.Text Header="Date"
+                                           
+                                           Width="auto" />
+                        </TextCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
