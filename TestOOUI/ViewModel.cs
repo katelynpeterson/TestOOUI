@@ -33,7 +33,7 @@ namespace TestOOUI
             c.Info.Add(new Info() { ID = 1, Date = new DateTime(2018, 1, 1), Skill = "JS" });
             _projects.Add(c);
         }
-        public ObservableCollection<Projects> Project
+        public ObservableCollection<Projects> Projects
         {
             get { return _projects; }
         }

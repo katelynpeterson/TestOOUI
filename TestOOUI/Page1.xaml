@@ -14,26 +14,27 @@
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
                     <RowDefinition Height=".25*" />
-                    <RowDefinition />
+                    <RowDefinition/>
                     <RowDefinition />
                 </Grid.RowDefinitions>
             </Grid>
 
+            
             <Label Grid.ColumnSpan="2"
                    HorizontalOptions="Center"
                    VerticalOptions="Center"
                    Text="Select a Project" />
             <ListView Grid.Row="1"
                       Grid.ColumnSpan="2"
-                     
+                      
                       x:Name="listViewProjects"
                       SelectedItem="0">
 
-                <ListView.ItemTemplate>
+                <!--<ListView.ItemTemplate>
                     <DataTemplate>
                         <TextCell Text="Name" />
                     </DataTemplate>
-                </ListView.ItemTemplate>
+                </ListView.ItemTemplate>-->
             </ListView>
             <ListView Grid.Row="2"
                       Grid.ColumnSpan="2"
